@@ -1,0 +1,3 @@
+import { useState } from 'react';
+import { StudyProps, usePrefs } from '../shared';
+export default function FlipCard(p:StudyProps){const [flipped,setFlipped]=useState(false);const {reduced}=usePrefs(p);return <button className={'flip-card '+(flipped?'flipped':'')} onClick={()=>setFlipped(!flipped)} aria-label={flipped?'返回卡片正面':'翻转卡片查看背面'} style={{transitionDuration:reduced?'0s':'.65s'}}><span className="flip-front"><span>AN OPEN INVITATION</span><b>Hello,<br/>possibility.</b><small>Tap to turn ↗</small></span><span className="flip-back"><span>ON THE OTHER SIDE</span><b>Something<br/>unexpected.</b><small>Tap to return ↙</small></span></button>}

@@ -1,0 +1,3 @@
+import { useEffect, useState } from 'react';
+import { StudyProps, usePrefs } from '../shared';
+export default function CountUp(p:StudyProps){const {active,duration}=usePrefs(p);const [n,setN]=useState(0);useEffect(()=>{if(!active){setN(2400);return}let frame=0;let start=performance.now();function tick(t:number){const x=Math.min((t-start)/duration(1800),1);setN(Math.round(2400*(1-Math.pow(1-x,3))));if(x<1)frame=requestAnimationFrame(tick)}frame=requestAnimationFrame(tick);return()=>cancelAnimationFrame(frame)},[active,p.speed]);return <div className="metric"><span className="tiny-label">IDEAS IN MOTION</span><strong>{n.toLocaleString('en-US')}<em>+</em></strong><span className="metric-line"/></div>}

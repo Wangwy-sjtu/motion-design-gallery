@@ -1,0 +1,3 @@
+import { useState } from 'react';
+import { StudyProps, usePrefs } from '../shared';
+export default function TiltCard(p:StudyProps){const {active}=usePrefs(p);const [r,setR]=useState([0,0]);return <div className="tilt-space" onPointerMove={e=>{if(!active||e.pointerType==='touch')return;const b=e.currentTarget.getBoundingClientRect();setR([(e.clientY-b.top-b.height/2)/-12,(e.clientX-b.left-b.width/2)/12])}} onPointerLeave={()=>setR([0,0])}><div className="membership" style={{transform:`rotateX(${r[0]}deg) rotateY(${r[1]}deg)`}}><span>ATELIER / MEMBERSHIP</span><div className="membership-sphere"/><b>Stay a little<br/>curious.</b><small>EST. 2026 <span>↗</span></small></div></div>}

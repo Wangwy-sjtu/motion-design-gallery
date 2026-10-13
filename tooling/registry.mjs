@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+const root=process.cwd();
+const rows=[...fs.readFileSync('src/metadata.ts','utf8').matchAll(/^ \['([^']+)','([^']+)','([^']+)','([^']+)','([^']+)','([^']+)','([^']+)','([^']+)','([^']+)','([^']+)'\]/gm)];
+const common=['src/shared.tsx','src/motion.css','LICENSE'];
+const deps=JSON.parse(fs.readFileSync('package.json')).dependencies;
+function file(p){return {path:p,sha256:crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex'),bytes:fs.statSync(p).size}}
+function closure(entry){const seen=new Set(common);function visit(p){if(seen.has(p))return;seen.add(p);if(!p.endsWith('.tsx'))return;for(const m of fs.readFileSync(p,'utf8').matchAll(/from ['"]([.][^'"]+)['"]/g)){let dest=path.posix.normalize(path.posix.join(path.posix.dirname(p),m[1]));if(!path.posix.extname(dest))dest+='.tsx';visit(dest)}}visit(entry);return [...seen].map(file)}
+const resources=rows.map(m=>({id:m[1],name:m[2],en:m[3],category:m[4],description_zh:m[6],trigger:m[7],best_for:m[8],avoid:m[9],framework:'React + TypeScript + CSS',origin:'original',license:'MIT',status:'build-verified',entry:`src/effects/${m[1]}.tsx`,dependencies:deps,files:closure(`src/effects/${m[1]}.tsx`),preview_url:'https://Wangwy-sjtu.github.io/motion-design-gallery/',usage:'Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout.'}));
+for(const [id,name,exp] of [['hero','首屏与宣言','HeroSection'],['features','能力展示','FeatureSection'],['metrics','数据与成果','MetricsSection'],['faq','问题与解答','FAQSection'],['pricing','方案与选择','PricingSection'],['cta','收尾与邀请','CTASection']])resources.push({id:`section-${id}`,name,category:'页面区块',description_zh:'可复用的完整页面区块；导入指定的命名导出。',origin:'original',license:'MIT',status:'build-verified',entry:'src/recipes/sections.tsx',export:exp,dependencies:deps,files:[...closure('src/recipes/sections.tsx'),file('src/styles.css')],preview_url:'https://Wangwy-sjtu.github.io/motion-design-gallery/'});
+for(const [id,name,exp] of [['robot','科技研究展示页','RoboticsPage'],['portfolio','极简作品集','PortfolioPage']])resources.push({id:`page-${id}`,name,category:'完整页面',description_zh:'概念示例，替换品牌、数据和联系入口后使用。',origin:'original',license:'MIT',status:'build-verified',entry:'src/recipes/pages.tsx',export:exp,dependencies:deps,files:[...closure('src/recipes/pages.tsx'),file('src/styles.css')],preview_url:`https://Wangwy-sjtu.github.io/motion-design-gallery/#demo-${id}`});
+const result={schema_version:1,version:'1.0.0',repository:'Wangwy-sjtu/motion-design-gallery',resolution:'Resolve a commit SHA once, then fetch manifest and every file from that SHA.',resources};
+fs.mkdirSync('public/catalog',{recursive:true});fs.writeFileSync('public/catalog/registry.json',JSON.stringify(result,null,2)+'\n');console.log(`Registry: ${resources.length} resources (${rows.length} effects).`);

@@ -1,0 +1,3 @@
+import { useState } from 'react';
+import { StudyProps } from '../shared';
+export default function ProgressTrack(_:StudyProps){const [n,setN]=useState(0);return <div className="progress-scene"><div className="progress-rail"><i style={{width:`${n}%`}}/></div><div className="scroll-demo" tabIndex={0} aria-label="滚动阅读进度" onScroll={e=>{const el=e.currentTarget;setN(Math.round(el.scrollTop/(el.scrollHeight-el.clientHeight)*100))}}><div className="reading-paper"><span>FIELD NOTES / 01</span><h3>A slower kind<br/>of discovery.</h3>{Array.from({length:12},(_,i)=><i key={i} style={{width:`${78+(i%3)*8}%`}}/>)}</div></div><b className="progress-value">{n}%</b></div>}

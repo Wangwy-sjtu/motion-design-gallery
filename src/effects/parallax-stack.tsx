@@ -1,0 +1,3 @@
+import { useState } from 'react';
+import { StudyProps, usePrefs } from '../shared';
+export default function ParallaxStack(p:StudyProps){const {reduced}=usePrefs(p);const [y,setY]=useState(0);return <div className="scroll-demo parallax-scene" tabIndex={0} aria-label="滚动查看分层视差" onScroll={e=>setY(e.currentTarget.scrollTop)}><div className="parallax-track">{['01','02','03'].map((n,i)=><div key={n} className={'parallax-card card-'+i} style={{transform:reduced?'none':`translateY(${y*(.3+i*.2)}px) rotate(${(i-1)*10}deg)`}}><span>DEPTH STUDY</span><b>{n}</b></div>)}<span className="parallax-hint">Scroll ↕</span></div></div>}

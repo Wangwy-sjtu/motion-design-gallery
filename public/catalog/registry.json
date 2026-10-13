@@ -1,0 +1,1728 @@
+{
+  "schema_version": 1,
+  "version": "1.0.0",
+  "repository": "Wangwy-sjtu/motion-design-gallery",
+  "resolution": "Resolve a commit SHA once, then fetch manifest and every file from that SHA.",
+  "resources": [
+    {
+      "id": "stagger-type",
+      "name": "错落字序",
+      "en": "Staggered type",
+      "category": "文字",
+      "description_zh": "逐词建立阅读顺序，让标题的重心自然落下。",
+      "trigger": "页面进入",
+      "best_for": "短标题与品牌宣言",
+      "avoid": "长段落、关键信息等待动画才可见",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/stagger-type.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/stagger-type.tsx",
+          "sha256": "077dcb59e412fa2ce94a593fb52058eddac6e2e79ddc76b6ae987cf85c916935",
+          "bytes": 559
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "blur-reveal",
+      "name": "从朦胧到清晰",
+      "en": "Blur reveal",
+      "category": "文字",
+      "description_zh": "用短暂模糊与位移完成柔和的文字入场。",
+      "trigger": "页面进入",
+      "best_for": "简短主标题",
+      "avoid": "密集正文、低性能设备的大面积模糊",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/blur-reveal.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/blur-reveal.tsx",
+          "sha256": "70ba192d727d6ad0ce46f8c4245023e8faed4c0620afd2b357172340817a9f04",
+          "bytes": 443
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "word-rotate",
+      "name": "轮换关键词",
+      "en": "Word rotation",
+      "category": "文字",
+      "description_zh": "固定句子骨架，仅替换关键词，减少布局跳动。",
+      "trigger": "定时切换",
+      "best_for": "展示少量产品能力",
+      "avoid": "用户尚未读完就切换的长句",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/word-rotate.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/word-rotate.tsx",
+          "sha256": "dae2c10f4d09f15dacc134556b6dca380ec5b187e0cf344921fc0f612e092ae1",
+          "bytes": 592
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "count-up",
+      "name": "有节奏的数字",
+      "en": "Counting up",
+      "category": "文字",
+      "description_zh": "数字使用渐缓曲线抵达目标，同时保持列宽稳定。",
+      "trigger": "页面进入",
+      "best_for": "可信的统计指标",
+      "avoid": "虚构数据或必须即时读出的余额",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/count-up.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/count-up.tsx",
+          "sha256": "ccbc6433832a35c8b67e3364b879745a1437b02a21a2952f86434990bb03e471",
+          "bytes": 708
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "scroll-reveal",
+      "name": "随阅读浮现",
+      "en": "Scroll reveal",
+      "category": "滚动",
+      "description_zh": "滚动推进时逐步显现段落，保留足够阅读时间。",
+      "trigger": "容器滚动",
+      "best_for": "内容章节",
+      "avoid": "隐藏核心正文或滚动劫持",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/scroll-reveal.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/scroll-reveal.tsx",
+          "sha256": "59ae9a0fbeee8bbf42751c7ff6755153b8fe4e4b3ffb06f6701ac667ae434d11",
+          "bytes": 707
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "progress-track",
+      "name": "阅读进度",
+      "en": "Reading progress",
+      "category": "滚动",
+      "description_zh": "将滚动距离映射为进度条，让长内容有可感知的长度。",
+      "trigger": "容器滚动",
+      "best_for": "文章与研究报告",
+      "avoid": "内容高度不断变化时的虚假百分比",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/progress-track.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/progress-track.tsx",
+          "sha256": "2db5072236b7f7a0f8ded2de7fbdfb64d95dc3c56590d8b5c1de6dd3d63a9a95",
+          "bytes": 677
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "parallax-stack",
+      "name": "层叠视差",
+      "en": "Depth in layers",
+      "category": "滚动",
+      "description_zh": "前后层使用不同位移速度建立空间感。",
+      "trigger": "容器滚动",
+      "best_for": "作品展示",
+      "avoid": "阅读正文跟随移动",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/parallax-stack.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/parallax-stack.tsx",
+          "sha256": "40834b0d601ebc1f589dbd873b4be1c1e6c0fa9604043cf5a1e6412206211b75",
+          "bytes": 643
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "sticky-story",
+      "name": "停驻叙事",
+      "en": "Sticky narrative",
+      "category": "滚动",
+      "description_zh": "章节依次停驻，再由下一段自然接替。",
+      "trigger": "容器滚动",
+      "best_for": "产品故事",
+      "avoid": "内容过长导致章节遮挡",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/sticky-story.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/sticky-story.tsx",
+          "sha256": "483f8dc7ab12ce18cfe064d329ddec01ad7685f683148b5f2e30a4175b43feec",
+          "bytes": 398
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "magnetic-button",
+      "name": "轻磁吸按钮",
+      "en": "Magnetic pull",
+      "category": "按钮",
+      "description_zh": "按钮轻轻追随附近指针，离开后回到中心。",
+      "trigger": "悬停与点击",
+      "best_for": "单个主要行动按钮",
+      "avoid": "表单、触屏上的位移追逐",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/magnetic-button.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/magnetic-button.tsx",
+          "sha256": "0cfcd6d2b5f6f84a48e5bb45475d24cf668dbed8311b2f7538c87dc76e2e4d43",
+          "bytes": 841
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "press-feedback",
+      "name": "按下即回应",
+      "en": "Tactile feedback",
+      "category": "按钮",
+      "description_zh": "按压反馈与保存状态形成完整、清楚的交互闭环。",
+      "trigger": "点击或键盘",
+      "best_for": "收藏与确认操作",
+      "avoid": "仅播放动画而没有结果",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/press-feedback.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/press-feedback.tsx",
+          "sha256": "9e5a33d9cda89f7cbee35c05dc31bf7f28c91c31a0cf897211a8b0dc2463df22",
+          "bytes": 554
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "ripple-button",
+      "name": "涟漪回应",
+      "en": "A little ripple",
+      "category": "按钮",
+      "description_zh": "反馈从点击位置展开，键盘操作从按钮中心展开。",
+      "trigger": "点击或键盘",
+      "best_for": "轻量操作反馈",
+      "avoid": "在高频操作中长时间循环",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/ripple-button.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/ripple-button.tsx",
+          "sha256": "4b0a4b6e5c51327d3d07a3078d69662a079c6a995203d9674c08855b50a002e7",
+          "bytes": 562
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "border-trail",
+      "name": "边缘光迹",
+      "en": "Border trail",
+      "category": "按钮",
+      "description_zh": "光迹沿边缘缓慢流动，指示一个持续但安静的状态。",
+      "trigger": "持续播放",
+      "best_for": "状态卡与重点行动",
+      "avoid": "多元素同时争夺注意力",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/border-trail.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/border-trail.tsx",
+          "sha256": "77df3cb873e7ab08330b1d2fab6e428612edc4bcf04b205bbc46da91b234ed87",
+          "bytes": 301
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "tilt-card",
+      "name": "手中的卡片",
+      "en": "A subtle tilt",
+      "category": "卡片",
+      "description_zh": "有限的三维倾斜让卡片呈现轻微实体质感。",
+      "trigger": "悬停",
+      "best_for": "作品封面与会员卡",
+      "avoid": "承载长篇正文或大角度倾斜",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/tilt-card.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/tilt-card.tsx",
+          "sha256": "8a0da2737041fefe4ab830393f5cd9a0fe3764c271f3b87d6ec8d6ac0f82f254",
+          "bytes": 689
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "spotlight-card",
+      "name": "跟随光斑",
+      "en": "Follow the light",
+      "category": "卡片",
+      "description_zh": "光照变化强化材质，文字始终保持清晰。",
+      "trigger": "悬停",
+      "best_for": "少量主视觉卡片",
+      "avoid": "仅靠光斑才能发现可点击区域",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/spotlight-card.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/spotlight-card.tsx",
+          "sha256": "e9b00a63cf0c4519f5afb21cbbc446844ab63f31fcef23d3ead05ec7c599d4bd",
+          "bytes": 554
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "flip-card",
+      "name": "另一面",
+      "en": "The other side",
+      "category": "卡片",
+      "description_zh": "明确的点击动作打开背面，支持再次点击返回。",
+      "trigger": "点击或键盘",
+      "best_for": "短小的双面说明",
+      "avoid": "把重要表单藏在卡片背面",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/flip-card.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/flip-card.tsx",
+          "sha256": "1d32c461fc8a9909c7722845a75f4ff02454b0e36d6f3757e75150dcb6a5879e",
+          "bytes": 685
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "stack-cards",
+      "name": "翻阅卡组",
+      "en": "A stack of ideas",
+      "category": "卡片",
+      "description_zh": "通过位置与大小变化表现卡片次序。",
+      "trigger": "点击或键盘",
+      "best_for": "少量精选作品",
+      "avoid": "大量内容缺少列表入口",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/stack-cards.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/stack-cards.tsx",
+          "sha256": "bc709ae762f3e6d7581ecd730c53c916b1e5c3657c6b67dfa3ce7d6451cf16a9",
+          "bytes": 700
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "aurora",
+      "name": "柔和极光",
+      "en": "Soft horizons",
+      "category": "背景",
+      "description_zh": "低频流动的色团构成有呼吸感的页面氛围。",
+      "trigger": "持续播放",
+      "best_for": "首屏背景",
+      "avoid": "高饱和频闪或覆盖文字",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/aurora.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/aurora.tsx",
+          "sha256": "b5061fa64889a3a5840c7dccaae489e34db6e9e9e72dc347bc42be7ed968650d",
+          "bytes": 202
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "dot-field",
+      "name": "点阵微光",
+      "en": "A field of dots",
+      "category": "背景",
+      "description_zh": "规则点阵在局部渐隐中形成有秩序的空间。",
+      "trigger": "悬停与持续播放",
+      "best_for": "科技产品背景",
+      "avoid": "缩小后产生摩尔纹",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/dot-field.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/dot-field.tsx",
+          "sha256": "e9d8c2a6ad8d92dfe4efc3fc33b8798efc90eacd7bb1a6b6ea02ee66dbdd1f35",
+          "bytes": 464
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "orbit-system",
+      "name": "有序轨道",
+      "en": "In its own time",
+      "category": "背景",
+      "description_zh": "不同速度的轨道围绕同一中心运行。",
+      "trigger": "持续播放",
+      "best_for": "系统关系、连接概念",
+      "avoid": "将示意运动当作真实科学数据",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/orbit-system.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/orbit-system.tsx",
+          "sha256": "6f6fcbc4ac17e6b801715ee9805c9c21d9e72c3f6f8ccbf4838502523cac2ea0",
+          "bytes": 312
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "grain-gradient",
+      "name": "颗粒与渐变",
+      "en": "Material study",
+      "category": "背景",
+      "description_zh": "轻量 SVG 噪声覆盖柔和渐变，增强印刷质感。",
+      "trigger": "持续播放",
+      "best_for": "编辑设计与作品集",
+      "avoid": "噪声降低正文对比度",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/grain-gradient.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/grain-gradient.tsx",
+          "sha256": "2027637ca8c955f006c92baf81fac0cb7531b23fa403161c03974fa02a83aa38",
+          "bytes": 470
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "shared-tabs",
+      "name": "流动选项卡",
+      "en": "Shared tabs",
+      "category": "交互",
+      "description_zh": "指示块在选项间连续移动，内容同步切换。",
+      "trigger": "点击或键盘",
+      "best_for": "少量同层级筛选",
+      "avoid": "只改变装饰而不改变选中状态",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/shared-tabs.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/shared-tabs.tsx",
+          "sha256": "e20143e2eb1dd53abdde499c50af85691c19ecb6521b19170789588c29e15760",
+          "bytes": 1079
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "accordion",
+      "name": "展开一段细节",
+      "en": "A little more",
+      "category": "交互",
+      "description_zh": "内容高度与透明度同步变化，保持明确的展开状态。",
+      "trigger": "点击或键盘",
+      "best_for": "常见问题与补充说明",
+      "avoid": "隐藏用户必须比较的信息",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/accordion.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/accordion.tsx",
+          "sha256": "3f8dba407869d63fd1200ad6c05f9c6ab864dffe23a6fc003d2178239175a202",
+          "bytes": 1012
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "toast-stack",
+      "name": "叠起的回应",
+      "en": "Moments saved",
+      "category": "交互",
+      "description_zh": "可关闭、会自动退出的通知轻轻叠起。",
+      "trigger": "点击或键盘",
+      "best_for": "非关键成功提示",
+      "avoid": "必须由用户确认的重要错误",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/toast-stack.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/toast-stack.tsx",
+          "sha256": "1b005cecd60791f7c0de552aa2b702ec8001836049162a76421777f17172dc2e",
+          "bytes": 1193
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "morph-menu",
+      "name": "开合之间",
+      "en": "An unfolding menu",
+      "category": "交互",
+      "description_zh": "菜单图标与面板同步变化，让开合过程容易理解。",
+      "trigger": "点击或键盘",
+      "best_for": "小型站点导航",
+      "avoid": "在移动端隐藏唯一导航入口",
+      "framework": "React + TypeScript + CSS",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/effects/morph-menu.tsx",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/effects/morph-menu.tsx",
+          "sha256": "1cb4843e3a3c6e312a6e0be328eda972aeb09c905ce4788e4067a3a8ddedb49c",
+          "bytes": 946
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/",
+      "usage": "Wrap in StudySurface from src/shared.tsx. Pass speed/paused/reduced to BOTH wrapper and component. Set a parent height for the layout."
+    },
+    {
+      "id": "section-hero",
+      "name": "首屏与宣言",
+      "category": "页面区块",
+      "description_zh": "可复用的完整页面区块；导入指定的命名导出。",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/recipes/sections.tsx",
+      "export": "HeroSection",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/recipes/sections.tsx",
+          "sha256": "c637f93fd12d041b1723b42d362a7a5891dec04eecd53c1caa5318bd5a24dd23",
+          "bytes": 2994
+        },
+        {
+          "path": "src/effects/stagger-type.tsx",
+          "sha256": "077dcb59e412fa2ce94a593fb52058eddac6e2e79ddc76b6ae987cf85c916935",
+          "bytes": 559
+        },
+        {
+          "path": "src/effects/aurora.tsx",
+          "sha256": "b5061fa64889a3a5840c7dccaae489e34db6e9e9e72dc347bc42be7ed968650d",
+          "bytes": 202
+        },
+        {
+          "path": "src/effects/press-feedback.tsx",
+          "sha256": "9e5a33d9cda89f7cbee35c05dc31bf7f28c91c31a0cf897211a8b0dc2463df22",
+          "bytes": 554
+        },
+        {
+          "path": "src/effects/tilt-card.tsx",
+          "sha256": "8a0da2737041fefe4ab830393f5cd9a0fe3764c271f3b87d6ec8d6ac0f82f254",
+          "bytes": 689
+        },
+        {
+          "path": "src/effects/count-up.tsx",
+          "sha256": "ccbc6433832a35c8b67e3364b879745a1437b02a21a2952f86434990bb03e471",
+          "bytes": 708
+        },
+        {
+          "path": "src/effects/accordion.tsx",
+          "sha256": "3f8dba407869d63fd1200ad6c05f9c6ab864dffe23a6fc003d2178239175a202",
+          "bytes": 1012
+        },
+        {
+          "path": "src/effects/shared-tabs.tsx",
+          "sha256": "e20143e2eb1dd53abdde499c50af85691c19ecb6521b19170789588c29e15760",
+          "bytes": 1079
+        },
+        {
+          "path": "src/effects/magnetic-button.tsx",
+          "sha256": "0cfcd6d2b5f6f84a48e5bb45475d24cf668dbed8311b2f7538c87dc76e2e4d43",
+          "bytes": 841
+        },
+        {
+          "path": "src/styles.css",
+          "sha256": "811d7fecb566101446c9f7bf776d97ed1923bef4b667f6d30889fc9ac9543159",
+          "bytes": 25616
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/"
+    },
+    {
+      "id": "section-features",
+      "name": "能力展示",
+      "category": "页面区块",
+      "description_zh": "可复用的完整页面区块；导入指定的命名导出。",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/recipes/sections.tsx",
+      "export": "FeatureSection",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/recipes/sections.tsx",
+          "sha256": "c637f93fd12d041b1723b42d362a7a5891dec04eecd53c1caa5318bd5a24dd23",
+          "bytes": 2994
+        },
+        {
+          "path": "src/effects/stagger-type.tsx",
+          "sha256": "077dcb59e412fa2ce94a593fb52058eddac6e2e79ddc76b6ae987cf85c916935",
+          "bytes": 559
+        },
+        {
+          "path": "src/effects/aurora.tsx",
+          "sha256": "b5061fa64889a3a5840c7dccaae489e34db6e9e9e72dc347bc42be7ed968650d",
+          "bytes": 202
+        },
+        {
+          "path": "src/effects/press-feedback.tsx",
+          "sha256": "9e5a33d9cda89f7cbee35c05dc31bf7f28c91c31a0cf897211a8b0dc2463df22",
+          "bytes": 554
+        },
+        {
+          "path": "src/effects/tilt-card.tsx",
+          "sha256": "8a0da2737041fefe4ab830393f5cd9a0fe3764c271f3b87d6ec8d6ac0f82f254",
+          "bytes": 689
+        },
+        {
+          "path": "src/effects/count-up.tsx",
+          "sha256": "ccbc6433832a35c8b67e3364b879745a1437b02a21a2952f86434990bb03e471",
+          "bytes": 708
+        },
+        {
+          "path": "src/effects/accordion.tsx",
+          "sha256": "3f8dba407869d63fd1200ad6c05f9c6ab864dffe23a6fc003d2178239175a202",
+          "bytes": 1012
+        },
+        {
+          "path": "src/effects/shared-tabs.tsx",
+          "sha256": "e20143e2eb1dd53abdde499c50af85691c19ecb6521b19170789588c29e15760",
+          "bytes": 1079
+        },
+        {
+          "path": "src/effects/magnetic-button.tsx",
+          "sha256": "0cfcd6d2b5f6f84a48e5bb45475d24cf668dbed8311b2f7538c87dc76e2e4d43",
+          "bytes": 841
+        },
+        {
+          "path": "src/styles.css",
+          "sha256": "811d7fecb566101446c9f7bf776d97ed1923bef4b667f6d30889fc9ac9543159",
+          "bytes": 25616
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/"
+    },
+    {
+      "id": "section-metrics",
+      "name": "数据与成果",
+      "category": "页面区块",
+      "description_zh": "可复用的完整页面区块；导入指定的命名导出。",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/recipes/sections.tsx",
+      "export": "MetricsSection",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/recipes/sections.tsx",
+          "sha256": "c637f93fd12d041b1723b42d362a7a5891dec04eecd53c1caa5318bd5a24dd23",
+          "bytes": 2994
+        },
+        {
+          "path": "src/effects/stagger-type.tsx",
+          "sha256": "077dcb59e412fa2ce94a593fb52058eddac6e2e79ddc76b6ae987cf85c916935",
+          "bytes": 559
+        },
+        {
+          "path": "src/effects/aurora.tsx",
+          "sha256": "b5061fa64889a3a5840c7dccaae489e34db6e9e9e72dc347bc42be7ed968650d",
+          "bytes": 202
+        },
+        {
+          "path": "src/effects/press-feedback.tsx",
+          "sha256": "9e5a33d9cda89f7cbee35c05dc31bf7f28c91c31a0cf897211a8b0dc2463df22",
+          "bytes": 554
+        },
+        {
+          "path": "src/effects/tilt-card.tsx",
+          "sha256": "8a0da2737041fefe4ab830393f5cd9a0fe3764c271f3b87d6ec8d6ac0f82f254",
+          "bytes": 689
+        },
+        {
+          "path": "src/effects/count-up.tsx",
+          "sha256": "ccbc6433832a35c8b67e3364b879745a1437b02a21a2952f86434990bb03e471",
+          "bytes": 708
+        },
+        {
+          "path": "src/effects/accordion.tsx",
+          "sha256": "3f8dba407869d63fd1200ad6c05f9c6ab864dffe23a6fc003d2178239175a202",
+          "bytes": 1012
+        },
+        {
+          "path": "src/effects/shared-tabs.tsx",
+          "sha256": "e20143e2eb1dd53abdde499c50af85691c19ecb6521b19170789588c29e15760",
+          "bytes": 1079
+        },
+        {
+          "path": "src/effects/magnetic-button.tsx",
+          "sha256": "0cfcd6d2b5f6f84a48e5bb45475d24cf668dbed8311b2f7538c87dc76e2e4d43",
+          "bytes": 841
+        },
+        {
+          "path": "src/styles.css",
+          "sha256": "811d7fecb566101446c9f7bf776d97ed1923bef4b667f6d30889fc9ac9543159",
+          "bytes": 25616
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/"
+    },
+    {
+      "id": "section-faq",
+      "name": "问题与解答",
+      "category": "页面区块",
+      "description_zh": "可复用的完整页面区块；导入指定的命名导出。",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/recipes/sections.tsx",
+      "export": "FAQSection",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/recipes/sections.tsx",
+          "sha256": "c637f93fd12d041b1723b42d362a7a5891dec04eecd53c1caa5318bd5a24dd23",
+          "bytes": 2994
+        },
+        {
+          "path": "src/effects/stagger-type.tsx",
+          "sha256": "077dcb59e412fa2ce94a593fb52058eddac6e2e79ddc76b6ae987cf85c916935",
+          "bytes": 559
+        },
+        {
+          "path": "src/effects/aurora.tsx",
+          "sha256": "b5061fa64889a3a5840c7dccaae489e34db6e9e9e72dc347bc42be7ed968650d",
+          "bytes": 202
+        },
+        {
+          "path": "src/effects/press-feedback.tsx",
+          "sha256": "9e5a33d9cda89f7cbee35c05dc31bf7f28c91c31a0cf897211a8b0dc2463df22",
+          "bytes": 554
+        },
+        {
+          "path": "src/effects/tilt-card.tsx",
+          "sha256": "8a0da2737041fefe4ab830393f5cd9a0fe3764c271f3b87d6ec8d6ac0f82f254",
+          "bytes": 689
+        },
+        {
+          "path": "src/effects/count-up.tsx",
+          "sha256": "ccbc6433832a35c8b67e3364b879745a1437b02a21a2952f86434990bb03e471",
+          "bytes": 708
+        },
+        {
+          "path": "src/effects/accordion.tsx",
+          "sha256": "3f8dba407869d63fd1200ad6c05f9c6ab864dffe23a6fc003d2178239175a202",
+          "bytes": 1012
+        },
+        {
+          "path": "src/effects/shared-tabs.tsx",
+          "sha256": "e20143e2eb1dd53abdde499c50af85691c19ecb6521b19170789588c29e15760",
+          "bytes": 1079
+        },
+        {
+          "path": "src/effects/magnetic-button.tsx",
+          "sha256": "0cfcd6d2b5f6f84a48e5bb45475d24cf668dbed8311b2f7538c87dc76e2e4d43",
+          "bytes": 841
+        },
+        {
+          "path": "src/styles.css",
+          "sha256": "811d7fecb566101446c9f7bf776d97ed1923bef4b667f6d30889fc9ac9543159",
+          "bytes": 25616
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/"
+    },
+    {
+      "id": "section-pricing",
+      "name": "方案与选择",
+      "category": "页面区块",
+      "description_zh": "可复用的完整页面区块；导入指定的命名导出。",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/recipes/sections.tsx",
+      "export": "PricingSection",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/recipes/sections.tsx",
+          "sha256": "c637f93fd12d041b1723b42d362a7a5891dec04eecd53c1caa5318bd5a24dd23",
+          "bytes": 2994
+        },
+        {
+          "path": "src/effects/stagger-type.tsx",
+          "sha256": "077dcb59e412fa2ce94a593fb52058eddac6e2e79ddc76b6ae987cf85c916935",
+          "bytes": 559
+        },
+        {
+          "path": "src/effects/aurora.tsx",
+          "sha256": "b5061fa64889a3a5840c7dccaae489e34db6e9e9e72dc347bc42be7ed968650d",
+          "bytes": 202
+        },
+        {
+          "path": "src/effects/press-feedback.tsx",
+          "sha256": "9e5a33d9cda89f7cbee35c05dc31bf7f28c91c31a0cf897211a8b0dc2463df22",
+          "bytes": 554
+        },
+        {
+          "path": "src/effects/tilt-card.tsx",
+          "sha256": "8a0da2737041fefe4ab830393f5cd9a0fe3764c271f3b87d6ec8d6ac0f82f254",
+          "bytes": 689
+        },
+        {
+          "path": "src/effects/count-up.tsx",
+          "sha256": "ccbc6433832a35c8b67e3364b879745a1437b02a21a2952f86434990bb03e471",
+          "bytes": 708
+        },
+        {
+          "path": "src/effects/accordion.tsx",
+          "sha256": "3f8dba407869d63fd1200ad6c05f9c6ab864dffe23a6fc003d2178239175a202",
+          "bytes": 1012
+        },
+        {
+          "path": "src/effects/shared-tabs.tsx",
+          "sha256": "e20143e2eb1dd53abdde499c50af85691c19ecb6521b19170789588c29e15760",
+          "bytes": 1079
+        },
+        {
+          "path": "src/effects/magnetic-button.tsx",
+          "sha256": "0cfcd6d2b5f6f84a48e5bb45475d24cf668dbed8311b2f7538c87dc76e2e4d43",
+          "bytes": 841
+        },
+        {
+          "path": "src/styles.css",
+          "sha256": "811d7fecb566101446c9f7bf776d97ed1923bef4b667f6d30889fc9ac9543159",
+          "bytes": 25616
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/"
+    },
+    {
+      "id": "section-cta",
+      "name": "收尾与邀请",
+      "category": "页面区块",
+      "description_zh": "可复用的完整页面区块；导入指定的命名导出。",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/recipes/sections.tsx",
+      "export": "CTASection",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/recipes/sections.tsx",
+          "sha256": "c637f93fd12d041b1723b42d362a7a5891dec04eecd53c1caa5318bd5a24dd23",
+          "bytes": 2994
+        },
+        {
+          "path": "src/effects/stagger-type.tsx",
+          "sha256": "077dcb59e412fa2ce94a593fb52058eddac6e2e79ddc76b6ae987cf85c916935",
+          "bytes": 559
+        },
+        {
+          "path": "src/effects/aurora.tsx",
+          "sha256": "b5061fa64889a3a5840c7dccaae489e34db6e9e9e72dc347bc42be7ed968650d",
+          "bytes": 202
+        },
+        {
+          "path": "src/effects/press-feedback.tsx",
+          "sha256": "9e5a33d9cda89f7cbee35c05dc31bf7f28c91c31a0cf897211a8b0dc2463df22",
+          "bytes": 554
+        },
+        {
+          "path": "src/effects/tilt-card.tsx",
+          "sha256": "8a0da2737041fefe4ab830393f5cd9a0fe3764c271f3b87d6ec8d6ac0f82f254",
+          "bytes": 689
+        },
+        {
+          "path": "src/effects/count-up.tsx",
+          "sha256": "ccbc6433832a35c8b67e3364b879745a1437b02a21a2952f86434990bb03e471",
+          "bytes": 708
+        },
+        {
+          "path": "src/effects/accordion.tsx",
+          "sha256": "3f8dba407869d63fd1200ad6c05f9c6ab864dffe23a6fc003d2178239175a202",
+          "bytes": 1012
+        },
+        {
+          "path": "src/effects/shared-tabs.tsx",
+          "sha256": "e20143e2eb1dd53abdde499c50af85691c19ecb6521b19170789588c29e15760",
+          "bytes": 1079
+        },
+        {
+          "path": "src/effects/magnetic-button.tsx",
+          "sha256": "0cfcd6d2b5f6f84a48e5bb45475d24cf668dbed8311b2f7538c87dc76e2e4d43",
+          "bytes": 841
+        },
+        {
+          "path": "src/styles.css",
+          "sha256": "811d7fecb566101446c9f7bf776d97ed1923bef4b667f6d30889fc9ac9543159",
+          "bytes": 25616
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/"
+    },
+    {
+      "id": "page-robot",
+      "name": "科技研究展示页",
+      "category": "完整页面",
+      "description_zh": "概念示例，替换品牌、数据和联系入口后使用。",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/recipes/pages.tsx",
+      "export": "RoboticsPage",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/recipes/pages.tsx",
+          "sha256": "9def8455b91e512b6a8f0ddbc5300b6cd9aff9e231dda19214a3be9fbc807b93",
+          "bytes": 4813
+        },
+        {
+          "path": "src/effects/orbit-system.tsx",
+          "sha256": "6f6fcbc4ac17e6b801715ee9805c9c21d9e72c3f6f8ccbf4838502523cac2ea0",
+          "bytes": 312
+        },
+        {
+          "path": "src/effects/tilt-card.tsx",
+          "sha256": "8a0da2737041fefe4ab830393f5cd9a0fe3764c271f3b87d6ec8d6ac0f82f254",
+          "bytes": 689
+        },
+        {
+          "path": "src/effects/grain-gradient.tsx",
+          "sha256": "2027637ca8c955f006c92baf81fac0cb7531b23fa403161c03974fa02a83aa38",
+          "bytes": 470
+        },
+        {
+          "path": "src/effects/accordion.tsx",
+          "sha256": "3f8dba407869d63fd1200ad6c05f9c6ab864dffe23a6fc003d2178239175a202",
+          "bytes": 1012
+        },
+        {
+          "path": "src/styles.css",
+          "sha256": "811d7fecb566101446c9f7bf776d97ed1923bef4b667f6d30889fc9ac9543159",
+          "bytes": 25616
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/#demo-robot"
+    },
+    {
+      "id": "page-portfolio",
+      "name": "极简作品集",
+      "category": "完整页面",
+      "description_zh": "概念示例，替换品牌、数据和联系入口后使用。",
+      "origin": "original",
+      "license": "MIT",
+      "status": "build-verified",
+      "entry": "src/recipes/pages.tsx",
+      "export": "PortfolioPage",
+      "dependencies": {
+        "react": "19.2.0",
+        "react-dom": "19.2.0",
+        "motion": "12.23.24",
+        "lucide-react": "0.468.0"
+      },
+      "files": [
+        {
+          "path": "src/shared.tsx",
+          "sha256": "bb3176050f3171ed6baa54d958aa9ee1ad51364e85febf696ea660b919ff1c91",
+          "bytes": 1083
+        },
+        {
+          "path": "src/motion.css",
+          "sha256": "875a46b4c1661d47aa5cd45c1e07e8ceb0c1bbc4b767bae5e5e84b3a0b865018",
+          "bytes": 11958
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "2ae8a3d9af9b702be622ba934d75663537d7341ab201594ebdb6e1a0c9c56531",
+          "bytes": 1068
+        },
+        {
+          "path": "src/recipes/pages.tsx",
+          "sha256": "9def8455b91e512b6a8f0ddbc5300b6cd9aff9e231dda19214a3be9fbc807b93",
+          "bytes": 4813
+        },
+        {
+          "path": "src/effects/orbit-system.tsx",
+          "sha256": "6f6fcbc4ac17e6b801715ee9805c9c21d9e72c3f6f8ccbf4838502523cac2ea0",
+          "bytes": 312
+        },
+        {
+          "path": "src/effects/tilt-card.tsx",
+          "sha256": "8a0da2737041fefe4ab830393f5cd9a0fe3764c271f3b87d6ec8d6ac0f82f254",
+          "bytes": 689
+        },
+        {
+          "path": "src/effects/grain-gradient.tsx",
+          "sha256": "2027637ca8c955f006c92baf81fac0cb7531b23fa403161c03974fa02a83aa38",
+          "bytes": 470
+        },
+        {
+          "path": "src/effects/accordion.tsx",
+          "sha256": "3f8dba407869d63fd1200ad6c05f9c6ab864dffe23a6fc003d2178239175a202",
+          "bytes": 1012
+        },
+        {
+          "path": "src/styles.css",
+          "sha256": "811d7fecb566101446c9f7bf776d97ed1923bef4b667f6d30889fc9ac9543159",
+          "bytes": 25616
+        }
+      ],
+      "preview_url": "https://Wangwy-sjtu.github.io/motion-design-gallery/#demo-portfolio"
+    }
+  ]
+}

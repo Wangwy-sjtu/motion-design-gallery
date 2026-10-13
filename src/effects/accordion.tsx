@@ -1,0 +1,5 @@
+import { useId, useState } from 'react';
+import { AnimatePresence, motion } from 'motion/react';
+import { Plus } from 'lucide-react';
+import { StudyProps, usePrefs } from '../shared';
+export default function Accordion(p:StudyProps){const [open,setOpen]=useState<number|null>(0);const {reduced,duration}=usePrefs(p);const id=useId();return <div className="accordion">{['A little intention','A sense of rhythm','Room to breathe'].map((t,i)=><section key={t}><button aria-expanded={open===i} aria-controls={id+i} onClick={()=>setOpen(open===i?null:i)}>{t}<Plus size={16} style={{transform:open===i?'rotate(45deg)':''}}/></button><AnimatePresence initial={false}>{open===i&&<motion.div id={id+i} initial={{height:0,opacity:0}} animate={{height:'auto',opacity:1}} exit={{height:0,opacity:0}} transition={{duration:reduced?0:duration(.25)}}><p>{['Let every movement have a reason.','Small gestures create a familiar feeling.','Leave space for what matters.'][i]}</p></motion.div>}</AnimatePresence></section>)}</div>}

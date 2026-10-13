@@ -1,0 +1,4 @@
+import { useId, useState } from 'react';
+import { AnimatePresence, motion } from 'motion/react';
+import { StudyProps, usePrefs } from '../shared';
+export default function MorphMenu(p:StudyProps){const [open,setOpen]=useState(false);const {reduced}=usePrefs(p);const id=useId();return <div className="menu-scene"><button className="menu-trigger" aria-expanded={open} aria-controls={id} onClick={()=>setOpen(!open)}><span>{open?'Close':'Explore'}</span><span className={'menu-lines '+(open?'open':'')}><i/><i/></span></button><AnimatePresence>{open&&<motion.nav id={id} aria-label="示例菜单" initial={reduced?false:{clipPath:'inset(0 0 100% 0 round 12px)'}} animate={{clipPath:'inset(0 0 0% 0 round 12px)'}} exit={{clipPath:'inset(0 0 100% 0 round 12px)'}} transition={{duration:reduced?0:.3}}>{['Work','About','Journal'].map(t=><button key={t} onClick={()=>setOpen(false)}>{t}<span>↗</span></button>)}</motion.nav>}</AnimatePresence></div>}
